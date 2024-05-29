@@ -22,6 +22,7 @@ userForm.addEventListener("submit", (e) => {
   } else {
     let checkboxVal;
     let leadStatus = "New Lead";
+    let leadSource = "Website";
     if (plot.checked && villa.checked) {
       checkboxVal = "Plot and Villa";
     } else if (plot.checked === false && villa.checked === true) {
@@ -37,7 +38,7 @@ userForm.addEventListener("submit", (e) => {
     submitBtn.innerHTML = "Processing...";
 
     fetch(
-      `https://ridhirazen.com/zohocrmleadcreate.php?phone_number=${phone.value}&first_name=${firstName.value}&last_name=${lastName.value}&email=${email.value}&product=${checkboxVal}&lead_status=${leadStatus}&description=${message.value}&mobile=${phone.value}`,
+      `https://ridhirazen.com/zohocrmleadcreate.php?phone_number=${phone.value}&first_name=${firstName.value}&last_name=${lastName.value}&email=${email.value}&product=${checkboxVal}&lead_source=${leadSource}&lead_status=${leadStatus}&description=${message.value}&mobile=${phone.value}`,
       {
         method: "get",
       }
