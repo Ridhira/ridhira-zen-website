@@ -80,7 +80,7 @@
     </div>
     <!-- ! Spinner End -->
     <!-- @ Navbar Start -->
-    <nav class="navbar navbar-expand-lg p-4">
+    <nav class="navbar navbar-expand-lg px-4">
       <a href="index.html" class="navbar-brand">
         <h1 class="m-0 text-primary">
           <img
@@ -101,7 +101,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto nav_bottom">
-          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link active abc">Home</a>
           <a href="Wellness.html" class="nav-item nav-link">Wellness</a>
           <a href="Landscapes.html" class="nav-item nav-link">Landscapes</a>
           <a href="Villas.html" class="nav-item nav-link">Villas</a>
@@ -112,7 +112,7 @@
               data-bs-toggle="dropdown"
               >About</a
             >
-            <div class="dropdown-menu p-0 bg-body">
+            <div class="dropdown-menu p-0">
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
@@ -856,7 +856,9 @@
               </p>
               <p class="w-100 mb-0 error-text" id="error-message"></p>
 
-              <button type="submit" class="submit_btn">Submit</button>
+              <button type="submit" class="submit_btn" id="submit_btn">
+                Submit
+              </button>
             </form>
           </div>
           <div class="col-lg-4">
@@ -918,12 +920,54 @@
       <h2>Contact Us</h2>
       <div class="horizontal_line_form"></div>
       <div class="scroll">
-        <form>
-          <input type="text" name="" placeholder="Full Name" required />
-          <input type="email" name="" placeholder="Email Address" required />
-          <input type="rel" name="" placeholder="Phone Number" required />
-          <textarea placeholder="Message here" required></textarea>
-          <button type="submit">Submit</button>
+        <form id="get-in-touch">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            id="firstName"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="rel"
+            name="userPhone"
+            id="userPhone"
+            placeholder="Phone Number"
+            required
+          />
+          <textarea
+            placeholder="Message here"
+            name="message"
+            id="message"
+            class="mb-0"
+            required
+          ></textarea>
+          <div class="d-flex gap-4 mt-3 mb-3">
+            <div class="form-group">
+              <input type="checkbox" id="plot-1" />
+              <label for="plot-1">Plot</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="villa-1" />
+              <label for="villa-1">Villa</label>
+            </div>
+          </div>
+          <p class="w-100 mb-2 error-text" id="errorMessage"></p>
+          <button type="submit" id="submitBtn">Submit</button>
         </form>
       </div>
     </div>
@@ -943,5 +987,6 @@
 
     <!-- $ Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

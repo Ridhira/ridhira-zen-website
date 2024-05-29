@@ -187,52 +187,85 @@
             <p class="paragraph-2">Let us know how to get back to you.</p>
             <div class="your_details_line_top"></div>
 
-            <form>
-              <div class="input_field">
-                <label for="full-name">Full Name <span>*</span></label>
-                <input
-                  type="text"
-                  id="full-name"
-                  placeholder="Full Name"
-                  required
-                />
+            <form id="user-details">
+              <div class="d-flex gap-5">
+                <div class="input_field w-100">
+                  <label for="first-name">First Name <span>*</span></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="input_field w-100">
+                  <label for="last-name">Last Name <span>*</span></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
               </div>
-              <div class="input_field">
-                <label for="phone">Phone Number <span>*</span></label>
-                <input
-                  id="phone"
-                  type="text"
-                  placeholder="Phone Number"
-                  required
-                />
+
+              <div class="d-flex gap-5">
+                <div class="input_field w-100">
+                  <label for="email">Email Address<span>*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="input_field w-100">
+                  <label for="phone">Phone Number <span>*</span></label>
+                  <input
+                    id="phone"
+                    type="number"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
               </div>
-              <div class="input_field">
-                <label for="email">Email Address<span>*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
-              </div>
-              <div class="bottom_heading">
+
+              <!-- <div class="bottom_heading">
                 <h6 class="heading-4">How can we help?</h6>
                 <p class="paragraph-2">
                   Feel free to ask a question or simply leave a comment.
                 </p>
                 <div class="your_details_line_bottom"></div>
-              </div>
+              </div> -->
               <div class="input_field">
-                <label for="textarea">Comment/Question <span>*</span></label>
+                <label for="description">Comment/Question <span>*</span></label>
                 <textarea
                   type="text"
-                  rows="4"
-                  id="textarea"
+                  rows="3"
+                  id="description"
                   placeholder="Comment/Question"
                   required
                 ></textarea>
               </div>
-              <button>Submit</button>
+              <div class="input_field">
+                <label for="description">Enquiry <span>*</span></label>
+                <div class="d-flex gap-4 mb-2 mb-lg-0">
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="plot" />
+                    <label for="plot">Plot</label>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="villa" />
+                    <label for="villa">Villa</label>
+                  </div>
+                </div>
+              </div>
+              <p class="w-100 mb-0 errorText" id="error-message"></p>
+              <button id="submit_btn" type="submit">Submit</button>
             </form>
           </div>
           <div class="d-flex justify-content-center col-lg-6">
@@ -282,6 +315,6 @@
 
     <!-- Template Javascript -->
     <script src="./js/main.js"></script>
-    <script src="./js/faq.js"></script>
+    <script src="./js/contact-us.js"></script>
   </body>
 </html>

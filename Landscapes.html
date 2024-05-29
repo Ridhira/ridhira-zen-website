@@ -67,6 +67,7 @@
     <link href="css/card-template.css" rel="stylesheet" />
     <link href="css/navbar.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/sibebar.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Spinner Start -->
@@ -546,6 +547,65 @@
       ><i class="bi bi-arrow-up"></i
     ></a>
 
+    <!-- @ SIDE BAR START -->
+    <div id="sidebar" class="sidebar-contact bg-primary hide-sidebar">
+      <div class="toggle"></div>
+      <h2>Contact Us</h2>
+      <div class="horizontal_line_form"></div>
+      <div class="scroll">
+        <form id="get-in-touch">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            id="firstName"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="rel"
+            name="userPhone"
+            id="userPhone"
+            placeholder="Phone Number"
+            required
+          />
+          <textarea
+            placeholder="Message here"
+            name="message"
+            id="message"
+            class="mb-0"
+            required
+          ></textarea>
+          <div class="d-flex gap-4 mt-3 mb-3">
+            <div class="form-group">
+              <input type="checkbox" id="plot-1" />
+              <label for="plot-1">Plot</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="villa-1" />
+              <label for="villa-1">Villa</label>
+            </div>
+          </div>
+          <p class="w-100 mb-2 error-text" id="errorMessage"></p>
+          <button type="submit" id="submitBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- @ SIDE BAR END -->
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -560,6 +620,6 @@
 
     <!-- Template Javascript -->
     <script src="./js/main.js"></script>
-    <script src="js/abc.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

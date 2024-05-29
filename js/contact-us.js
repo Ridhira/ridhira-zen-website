@@ -1,28 +1,19 @@
-//! SIDE BAR CONTACT US
-// $(document).ready(function () {
-//   $(".toggle").click(function () {
-//     $(".sidebar-contact").toggleClass("active");
-//     $(".toggle").toggleClass("active");
-//   });
-// });
+let userForm = document.getElementById("user-details");
 
-// ! FORM SUBMISSION SIDE BAR
-let getInTouchForm = document.getElementById("get-in-touch");
-
-getInTouchForm.addEventListener("submit", (e) => {
+userForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let firstName = document.getElementById("firstName");
-  let lastName = document.getElementById("lastName");
-  let email = document.getElementById("userEmail");
-  let phone = document.getElementById("userPhone");
-  let message = document.getElementById("message");
-  let plot = document.getElementById("plot-1");
-  let villa = document.getElementById("villa-1");
-  let error = document.getElementById("errorMessage");
-  let submitBtn = document.getElementById("submitBtn");
+  let firstName = document.getElementById("first-name");
+  let lastName = document.getElementById("last-name");
+  let email = document.getElementById("email");
+  let phone = document.getElementById("phone");
+  let message = document.getElementById("description");
+  let plot = document.getElementById("plot");
+  let villa = document.getElementById("villa");
+  let error = document.getElementById("error-message");
+  let submitBtn = document.getElementById("submit_btn");
 
-  console.log(plot.checked, villa.checked);
+  console.log(plot.checked, villa.checked, firstName.value);
 
   if (phone.value.length !== 10) {
     error.innerHTML = "*Valid phone number is required ";
@@ -59,8 +50,8 @@ getInTouchForm.addEventListener("submit", (e) => {
         if (data.data[0].status === "success") {
           error.innerHTML =
             "Your form details submitted successfully. Thankyou!! ";
-
           submitBtn.innerHTML = "Submit";
+
           firstName.value = "";
           lastName.value = "";
           email.value = "";
