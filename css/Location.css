@@ -98,14 +98,14 @@
 
 @media (max-width: 992px) {
   .location-page-banner {
-    height: 50vh;
+    height: 60vh;
     margin-top: 0rem;
   }
 }
 
 @media (max-width: 768px) {
   .location-page-banner {
-    height: 40vh;
+    height: 50vh;
   }
 
   .location-image img {
@@ -133,7 +133,7 @@
 
 @media (max-width: 568px) {
   .location-page-banner {
-    height: 25vh;
+    height: 40vh;
   }
 
   .location-image img {
