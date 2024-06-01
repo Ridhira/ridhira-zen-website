@@ -18,17 +18,17 @@
       name="description"
     />
 
-    <!-- Favicon -->
+    <!-- ! Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
+    <!-- @ Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Icon Font Stylesheet -->
+    <!-- # Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
@@ -38,7 +38,7 @@
       rel="stylesheet"
     />
 
-    <!-- Libraries Stylesheet -->
+    <!-- % Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link
@@ -46,14 +46,14 @@
       rel="stylesheet"
     />
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- ! Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
-    <!-- Template Stylesheet -->
+    <!-- @ Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/villas.css" rel="stylesheet" />
     <link href="css/header-carousel.css" rel="stylesheet" />
@@ -62,9 +62,10 @@
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/table.css" rel="stylesheet" />
     <link href="css/sibebar.css" rel="stylesheet" />
+    <link href="css/contactUs.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- ! Spinner Start -->
+    <!-- # Spinner Start -->
     <div
       id="spinner"
       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
@@ -81,9 +82,9 @@
         alt="Ridhira zen logo"
       />
     </div>
-    <!-- ! Spinner End -->
+    <!-- # Spinner End -->
 
-    <!-- ! Navbar Start -->
+    <!-- $ Navbar Start -->
     <nav class="navbar navbar-expand-lg px-4">
       <a href="index.html" class="navbar-brand">
         <h1 class="m-0 text-primary">
@@ -108,27 +109,29 @@
           <a href="/Wellness.html" class="nav-item nav-link">Wellness</a>
           <a href="/Landscapes.html" class="nav-item nav-link">Landscapes</a>
           <a href="/Villas.html" class="nav-item nav-link active">Villas</a>
+          <a href="ContactUs.html" class="nav-item nav-link">Contact Us</a>
           <div class="nav-item dropdown">
             <a
               href="AboutUs.html"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >About</a
             >
+              About
+            </a>
             <div class="dropdown-menu p-0 bg-body">
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
-              <a href="/ContactUs.html" class="dropdown-item">Contact Us</a>
+              <!-- <a href="/ContactUs.html" class="dropdown-item">Contact Us</a> -->
               <!-- <a href="Faq.html" class="dropdown-item">FAQ</a> -->
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <!-- ! Navbar End -->
+    <!-- $ Navbar End -->
 
-    <!-- ! VILLA BANNER START -->
+    <!-- % VILLA BANNER START -->
     <div class="villas-page-banner">
       <div class="banner_heading">
         <h2 class="heading-1">LUXURY RESORT RESIDENCES</h2>
@@ -136,7 +139,7 @@
         <h2 class="heading-1">PRIVATE POOL</h2>
       </div>
     </div>
-    <!-- ! VILLA BANNER END -->
+    <!-- % VILLA BANNER END -->
 
     <!-- ! VILLA FEATURES AND SIZE OF VILLA START -->
     <div class="bg-secondary py-5">
@@ -205,7 +208,7 @@
     </div>
     <!-- ! VILLA FEATURES AND SIZE OF VILLA END -->
 
-    <!-- ! VILLA IMAGE GALLERY START -->
+    <!-- @ VILLA IMAGE GALLERY START -->
     <div class="gallery-container bg-secondary">
       <div class="gallery">
         <figure class="gallery__item gallery__item--1">
@@ -250,31 +253,90 @@
         </div>
       </div>
     </div>
-    <!-- ! VILLA IMAGE GALLERY END -->
+    <!-- @ VILLA IMAGE GALLERY END -->
 
-    <!-- ! PLOT SECTION START -->
+    <!-- # PLOT SECTION START -->
     <div class="bg-secondary py-5">
       <div class="plot-primary-heading">
-        <h1 class="heading-1">BE A PLOT OWNER</h1>
+        <h1 class="heading-1">BE A VILLA OWNER</h1>
         <p>Experience the privilege of Villa Ownership</p>
         <p>
-          Invest in Ridhira zen's Resort Residences villas & Plots for a
-          lucrative future, where meticulous design ensures unparalleled growth
-          and high yields.
+          Invest in Ridhira zen's Resort Residences villas for a lucrative
+          future, where meticulous design ensures unparalleled growth and high
+          yields.
         </p>
-
-        <span class="heading-2">
-          240 Sq. yds&nbsp;&nbsp;|&nbsp;&nbsp;330 Sq.
-          yds&nbsp;&nbsp;|&nbsp;&nbsp;480 Sq. yds
-        </span>
-      </div>
-      <div class="villa-plot-container">
-        <img src="img/Home/Images/plot-banner-1.jpg" />
       </div>
     </div>
-    <!-- ! PLOT SECTION END -->
 
-    <!-- ! COMPARISON TABLE  START -->
+    <section class="villa-plot-container">
+      <!-- <img src="img/Home/Images/plot-banner-1.jpg" /> -->
+      <div class="form-container">
+        <form id="contact-form" class="user-details">
+          <!-- <h3 class="heading-3 pt-4">Contact Us</h3> -->
+          <div class="d-flex gap-5">
+            <div class="input_field w-100">
+              <label for="first-name">First Name <span>*</span></label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="input_field w-100">
+              <label for="last-name">Last Name <span>*</span></label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="d-flex gap-5">
+            <div class="input_field w-100">
+              <label for="phone">Phone Number <span>*</span></label>
+              <input
+                id="phone"
+                type="number"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="input_field w-100">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+            </div>
+          </div>
+
+          <div class="input_field">
+            <label for="description">Comment/Question </label>
+            <textarea
+              type="text"
+              rows="3"
+              id="description"
+              placeholder="Comment/Question"
+            ></textarea>
+          </div>
+
+          <p class="w-100 mb-0 errorText" id="error-message"></p>
+          <button id="submit_btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- # PLOT SECTION END -->
+
+    <!-- $ COMPARISON TABLE  START -->
     <div class="py-5 bg-secondary">
       <div class="container-md">
         <table class="table-container bg-secondary">
@@ -422,9 +484,9 @@
         </table>
       </div>
     </div>
-    <!-- ! COMPARISON TABLE  END -->
+    <!-- $ COMPARISON TABLE  END -->
 
-    <!-- ! MASTER LAYOUT  START -->
+    <!-- % MASTER LAYOUT  START -->
     <div class="bg-secondary">
       <div class="master-layout">
         <h1 class="heading-1">Master Layout</h1>
@@ -433,7 +495,7 @@
         <img src="img/Villas/Images/master-layout-1.jpg" />
       </div>
     </div>
-    <!-- ! MASTER LAYOUT  END -->
+    <!-- % MASTER LAYOUT  END -->
 
     <!-- ! FOOTER START -->
     <div class="container-fluid bg-primary py-5">
@@ -453,15 +515,16 @@
     </div>
     <!-- ! FOOTER END -->
 
-    <!-- Back to Top -->
+    <!-- @ Back to Top -->
     <a
       href="#"
       class="btn btn-lg btn-primary btn-lg-square back-to-top"
       id="back-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
-    <!-- @ SIDE BAR START -->
+    <!-- # SIDE BAR START -->
     <div id="sidebar" class="sidebar-contact bg-primary hide-sidebar">
       <div class="toggle"></div>
       <h2>Contact Us</h2>
@@ -483,27 +546,26 @@
             required
           />
           <input
-            type="email"
-            name="userEmail"
-            id="userEmail"
-            placeholder="Email Address"
-            required
-          />
-          <input
             type="rel"
             name="userPhone"
             id="userPhone"
             placeholder="Phone Number"
             required
           />
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email Address"
+          />
+
           <textarea
             placeholder="Message here"
             name="message"
             id="message"
             class="mb-0"
-            required
           ></textarea>
-          <div class="d-flex gap-4 mt-3 mb-3">
+          <!-- <div class="d-flex gap-4 mt-3 mb-3">
             <div class="form-group">
               <input type="checkbox" id="plot-1" />
               <label for="plot-1">Plot</label>
@@ -512,15 +574,15 @@
               <input type="checkbox" id="villa-1" />
               <label for="villa-1">Villa</label>
             </div>
-          </div>
+          </div> -->
           <p class="w-100 mb-2 error-text" id="errorMessage"></p>
           <button type="submit" id="submitBtn">Submit</button>
         </form>
       </div>
     </div>
-    <!-- @ SIDE BAR END -->
+    <!-- # SIDE BAR END -->
 
-    <!-- ! JavaScript Libraries -->
+    <!-- $ JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -532,8 +594,9 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- ! Template Javascript -->
+    <!-- % Template Javascript -->
     <script src="./js/main.js"></script>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/contact-us.js"></script>
   </body>
 </html>

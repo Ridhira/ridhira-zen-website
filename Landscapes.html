@@ -114,6 +114,7 @@
           <a href="/Wellness.html" class="nav-item nav-link">Wellness</a>
           <a href="#" class="nav-item nav-link active">Landscapes</a>
           <a href="/Villas.html" class="nav-item nav-link">Villas</a>
+          <a href="ContactUs.html" class="nav-item nav-link">Contact Us</a>
           <div class="nav-item dropdown">
             <a
               href="AboutUs.html"
@@ -125,7 +126,7 @@
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
-              <a href="/ContactUs.html" class="dropdown-item">Contact Us</a>
+              <!-- <a href="/ContactUs.html" class="dropdown-item">Contact Us</a> -->
               <!-- <a href="Faq.html" class="dropdown-item">FAQ</a> -->
             </div>
           </div>
@@ -565,27 +566,26 @@
             required
           />
           <input
-            type="email"
-            name="userEmail"
-            id="userEmail"
-            placeholder="Email Address"
-            required
-          />
-          <input
             type="rel"
             name="userPhone"
             id="userPhone"
             placeholder="Phone Number"
             required
           />
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email Address"
+          />
+
           <textarea
             placeholder="Message here"
             name="message"
             id="message"
             class="mb-0"
-            required
           ></textarea>
-          <div class="d-flex gap-4 mt-3 mb-3">
+          <!-- <div class="d-flex gap-4 mt-3 mb-3">
             <div class="form-group">
               <input type="checkbox" id="plot-1" />
               <label for="plot-1">Plot</label>
@@ -594,7 +594,7 @@
               <input type="checkbox" id="villa-1" />
               <label for="villa-1">Villa</label>
             </div>
-          </div>
+          </div> -->
           <p class="w-100 mb-2 error-text" id="errorMessage"></p>
           <button type="submit" id="submitBtn">Submit</button>
         </form>

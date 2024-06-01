@@ -17,8 +17,8 @@ getInTouchForm.addEventListener("submit", (e) => {
   let email = document.getElementById("userEmail");
   let phone = document.getElementById("userPhone");
   let message = document.getElementById("message");
-  let plot = document.getElementById("plot-1");
-  let villa = document.getElementById("villa-1");
+  // let plot = document.getElementById("plot-1");
+  // let villa = document.getElementById("villa-1");
   let error = document.getElementById("errorMessage");
   let submitBtn = document.getElementById("submitBtn");
 
@@ -26,23 +26,21 @@ getInTouchForm.addEventListener("submit", (e) => {
 
   if (phone.value.length !== 10) {
     error.innerHTML = "*Valid phone number is required ";
-  } else if (plot.checked === false && villa.checked === false) {
-    error.innerHTML = "*At least one value is required in checkbox";
-  } else {
-    let checkboxVal;
+  }
+  //  else if (plot.checked === false && villa.checked === false) {
+  //   error.innerHTML = "*At least one value is required in checkbox";
+  // }
+  else {
+    let checkboxVal = "Villa";
     let leadStatus = "New Lead";
     let leadSource = "Website";
-    if (plot.checked && villa.checked) {
-      checkboxVal = "Plot and Villa";
-    } else if (plot.checked === false && villa.checked === true) {
-      checkboxVal = "Villa";
-    } else if (plot.checked === true && villa.checked === false) {
-      checkboxVal = "Plot";
-    }
-
-    console.log(
-      `${firstName.value}, ${lastName.value}, ${email.value}, ${phone.value}, ${message.value}, ${checkboxVal}`
-    );
+    // if (plot.checked && villa.checked) {
+    //   checkboxVal = "Plot and Villa";
+    // } else if (plot.checked === false && villa.checked === true) {
+    //   checkboxVal = "Villa";
+    // } else if (plot.checked === true && villa.checked === false) {
+    //   checkboxVal = "Plot";
+    // }
 
     submitBtn.innerHTML = "Processing...";
 
@@ -67,8 +65,12 @@ getInTouchForm.addEventListener("submit", (e) => {
           email.value = "";
           phone.value = "";
           message.value = "";
-          plot.checked = false;
-          villa.checked = false;
+          // plot.checked = false;
+          // villa.checked = false;
+        } else if (data.data[0].status === "error") {
+          console.log("In Else Block");
+          error.innerHTML = "Something went wrong. Please Try Again!!";
+          submitBtn.innerHTML = "Submit";
         }
       })
       .catch((error) => {

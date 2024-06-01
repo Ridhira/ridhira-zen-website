@@ -148,6 +148,20 @@ form {
   padding-left: 0.4rem;
 }
 
+.success_text {
+  color: green;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.errorText {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 15px !important;
+  text-transform: capitalize;
+}
+
 form button {
   padding: 0.5rem 1.5rem;
   margin-top: 2rem;
@@ -226,13 +240,6 @@ form button:focus {
   border: solid var(--primary);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-}
-
-.errorText {
-  color: red !important;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-top: 15px !important;
 }
 
 /* //////////////////////////////////////// */

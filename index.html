@@ -29,8 +29,11 @@
     />
     <!-- Icon Font Stylesheet -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
@@ -105,18 +108,20 @@
           <a href="Wellness.html" class="nav-item nav-link">Wellness</a>
           <a href="Landscapes.html" class="nav-item nav-link">Landscapes</a>
           <a href="Villas.html" class="nav-item nav-link">Villas</a>
+          <a href="ContactUs.html" class="nav-item nav-link">Contact Us</a>
           <div class="nav-item dropdown">
             <a
               href="AboutUs.html"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >About</a
             >
+              About
+            </a>
             <div class="dropdown-menu p-0">
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
-              <a href="ContactUs.html" class="dropdown-item">Contact Us</a>
+              <!-- <a href="ContactUs.html" class="dropdown-item">Contact Us</a> -->
               <!-- <a href="Faq.html" class="dropdown-item">FAQ</a> -->
             </div>
           </div>
@@ -763,7 +768,7 @@
     </div>
     <!-- # CAROUSEL GALLERY END LEFT CAROUSEL RIGHT NAV -->
     <!-- $ PLOT SECTION START -->
-    <div class="plot_section_container">
+    <!-- <div class="plot_section_container">
       <div class="plot_section">
         <div class="plot_section_text">
           <h2 class="heading-1">Be a plot owner</h2>
@@ -786,7 +791,7 @@
           </h4>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- $ PLOT SECTION END -->
     <!-- % FOOTER START -->
     <div class="container-fluid bg-primary py-5">
@@ -815,14 +820,6 @@
               />
 
               <input
-                type="email"
-                id="email"
-                placeholder="Email Address"
-                name="email"
-                required
-              />
-
-              <input
                 type="number"
                 name="phone"
                 id="phone"
@@ -831,14 +828,20 @@
               />
 
               <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                name="email"
+              />
+
+              <input
                 type="text"
                 name="description"
                 id="description"
-                required
                 placeholder="Message here"
               />
 
-              <div class="d-flex gap-4 mt-3 mb-4 mb-lg-0">
+              <!-- <div class="d-flex gap-4 mt-3 mb-4 mb-lg-0">
                 <div class="form-group">
                   <input type="checkbox" id="plot" />
                   <label for="plot">Plot</label>
@@ -847,7 +850,7 @@
                   <input type="checkbox" id="villa" />
                   <label for="villa">Villa</label>
                 </div>
-              </div>
+              </div> -->
               <p class="term_text paragraph-2">
                 By sharing your contact details, you allow the Ridhira Group
                 (even if on DND) to share project information via various
@@ -888,12 +891,38 @@
                   </small>
                 </p>
               </div>
+
+              <div class="site_address wow zoomIn" data-wow-delay="1s">
+                <div class="social-icons">
+                  <a
+                    href="https://www.facebook.com/ridhirazen1"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/ridhirazen/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ridhira/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="copyright">
           <p class="paragraph-1">
-            ©2024 Ridhira Group |
+            <img src="./img/Home/Images/dtcp-image-2.png" alt="DTCP" />
+            DTCP Approved |
+            <img src="./img/Home/Images/rera-image-2.png" alt="RERA" />
+            RERA Approved | RERA NO : P01100005298 | ©2024 Ridhira Group |
             <a href="/Privacy.html">Privacy Policy</a>
           </p>
           <p class="paragraph-2">
@@ -936,27 +965,26 @@
             required
           />
           <input
-            type="email"
-            name="userEmail"
-            id="userEmail"
-            placeholder="Email Address"
-            required
-          />
-          <input
             type="rel"
             name="userPhone"
             id="userPhone"
             placeholder="Phone Number"
             required
           />
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email Address"
+          />
+
           <textarea
             placeholder="Message here"
             name="message"
             id="message"
             class="mb-0"
-            required
           ></textarea>
-          <div class="d-flex gap-4 mt-3 mb-3">
+          <!-- <div class="d-flex gap-4 mt-3 mb-3">
             <div class="form-group">
               <input type="checkbox" id="plot-1" />
               <label for="plot-1">Plot</label>
@@ -965,7 +993,7 @@
               <input type="checkbox" id="villa-1" />
               <label for="villa-1">Villa</label>
             </div>
-          </div>
+          </div> -->
           <p class="w-100 mb-2 error-text" id="errorMessage"></p>
           <button type="submit" id="submitBtn">Submit</button>
         </form>

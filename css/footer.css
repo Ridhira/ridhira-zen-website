@@ -15,8 +15,7 @@
   margin-bottom: 2rem;
 }
 
-form > input,
-form > textarea {
+form > input {
   width: 40%;
   background: transparent;
   border: none;
@@ -90,6 +89,13 @@ form > textarea {
 
 .copyright {
   margin-top: 3rem;
+}
+
+.copyright img {
+  width: 2rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 .copyright p:first-child {

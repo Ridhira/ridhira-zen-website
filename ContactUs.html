@@ -103,10 +103,13 @@
           <a href="/Wellness.html" class="nav-item nav-link">Wellness</a>
           <a href="/Landscapes.html" class="nav-item nav-link">Landscapes</a>
           <a href="/Villas.html" class="nav-item nav-link">Villas</a>
+          <a href="ContactUs.html" class="nav-item nav-link active">
+            Contact Us
+          </a>
           <div class="nav-item dropdown">
             <a
               href="AboutUs.html"
-              class="nav-link dropdown-toggle active"
+              class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               >About</a
             >
@@ -114,7 +117,7 @@
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
-              <a href="#" class="dropdown-item">Contact Us</a>
+              <!-- <a href="#" class="dropdown-item">Contact Us</a> -->
               <!-- <a href="Faq.html" class="dropdown-item">FAQ</a> -->
             </div>
           </div>
@@ -187,7 +190,7 @@
             <p class="paragraph-2">Let us know how to get back to you.</p>
             <div class="your_details_line_top"></div>
 
-            <form id="user-details">
+            <form id="contact-form">
               <div class="d-flex gap-5">
                 <div class="input_field w-100">
                   <label for="first-name">First Name <span>*</span></label>
@@ -213,17 +216,16 @@
 
               <div class="d-flex gap-5">
                 <div class="input_field w-100">
-                  <label for="email">Email Address<span>*</span></label>
+                  <label for="email">Email Address</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Email Address"
-                    required
                   />
                 </div>
                 <div class="input_field w-100">
-                  <label for="phone">Phone Number <span>*</span></label>
+                  <label for="phone">Phone Number </label>
                   <input
                     id="phone"
                     type="number"
@@ -248,10 +250,9 @@
                   rows="3"
                   id="description"
                   placeholder="Comment/Question"
-                  required
                 ></textarea>
               </div>
-              <div class="input_field">
+              <!-- <div class="input_field">
                 <label for="description">Enquiry <span>*</span></label>
                 <div class="d-flex gap-4 mb-2 mb-lg-0">
                   <div class="form-checkbox">
@@ -263,7 +264,7 @@
                     <label for="villa">Villa</label>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <p class="w-100 mb-0 errorText" id="error-message"></p>
               <button id="submit_btn" type="submit">Submit</button>
             </form>
