@@ -134,7 +134,7 @@
   align-items: center;
 }
 
-.gallery {
+.gallery-interior {
   display: grid;
   grid-template-rows: repeat(5, 120px);
   grid-template-columns: repeat(4, 18vw);
@@ -346,7 +346,7 @@
     align-items: center;
   }
 
-  .gallery {
+  .gallery-interior {
     display: grid;
     grid-template-rows: repeat(2, 300px);
     grid-template-columns: repeat(2, 48vw);
@@ -388,7 +388,7 @@
     height: 50vh;
   }
 
-  .gallery {
+  .gallery-interior {
     grid-template-rows: repeat(2, 200px);
   }
 }

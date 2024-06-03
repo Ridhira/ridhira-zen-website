@@ -63,6 +63,7 @@
     <link href="css/table.css" rel="stylesheet" />
     <link href="css/sibebar.css" rel="stylesheet" />
     <link href="css/contactUs.css" rel="stylesheet" />
+    <link href="css/villa-gallery.css" rel="stylesheet" />
   </head>
   <body>
     <!-- # Spinner Start -->
@@ -122,8 +123,6 @@
               <a href="AboutUs.html" class="dropdown-item">About Us </a>
               <a href="OurLeaders.html" class="dropdown-item">Our Leaders </a>
               <a href="Location.html" class="dropdown-item">Location</a>
-              <!-- <a href="/ContactUs.html" class="dropdown-item">Contact Us</a> -->
-              <!-- <a href="Faq.html" class="dropdown-item">FAQ</a> -->
             </div>
           </div>
         </div>
@@ -210,7 +209,7 @@
 
     <!-- @ VILLA IMAGE GALLERY START -->
     <div class="gallery-container bg-secondary">
-      <div class="gallery">
+      <div class="gallery-interior">
         <figure class="gallery__item gallery__item--1">
           <img
             src="img/Villas/Images/Interior-1.jpg"
@@ -266,13 +265,105 @@
           yields.
         </p>
       </div>
+
+      <div class="main-image">
+        <img src="img/gallery/villa/villa-1.jpg" alt="img" id="main" />
+      </div>
+
+      <div>
+        <!-- <input type="radio" id="interior" name="selector" checked />
+        <label for="interior">Interior</label>
+        <input type="radio" id="spa" name="selector" />
+        <label for="spa">Spa</label> -->
+
+        <div class="gallery" id="thumbnails">
+          <figure class="cards interior">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-1.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="cards interior">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-2.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="cards interior">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-3.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="cards interior">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-4.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-5.jpg"
+              alt=""
+            />
+          </figure>
+          <!-- <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-6.jpg"
+              alt=""
+            />
+          </figure> -->
+          <!-- <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-7.jpg"
+              alt=""
+            />
+          </figure> -->
+          <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/villa/villa-8.jpg"
+              alt=""
+            />
+          </figure>
+          <!-- <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/spa/spa-4.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="cards spa">
+            <img
+              class="card__image"
+              loading="lazy"
+              src="img/gallery/spa/spa-5.jpg"
+              alt=""
+            />
+          </figure> -->
+        </div>
+      </div>
     </div>
 
     <section class="villa-plot-container">
-      <!-- <img src="img/Home/Images/plot-banner-1.jpg" /> -->
       <div class="form-container">
         <form id="contact-form" class="user-details">
-          <!-- <h3 class="heading-3 pt-4">Contact Us</h3> -->
           <div class="d-flex gap-5">
             <div class="input_field w-100">
               <label for="first-name">First Name <span>*</span></label>
@@ -333,7 +424,6 @@
         </form>
       </div>
     </section>
-
     <!-- # PLOT SECTION END -->
 
     <!-- $ COMPARISON TABLE  START -->
@@ -600,5 +690,6 @@
     <script src="./js/main.js"></script>
     <script src="./js/sidebar.js"></script>
     <script src="./js/contact-us.js"></script>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>
