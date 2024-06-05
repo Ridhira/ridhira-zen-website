@@ -179,6 +179,7 @@ html {
   text-align: left;
   padding-bottom: 0rem;
   text-transform: uppercase;
+  padding-right: 4rem;
 }
 
 .under_line_wellness_reality {
@@ -196,6 +197,7 @@ html {
   line-height: 1.5;
   font-weight: normal;
   color: var(--primary);
+  padding-right: 4rem;
 }
 
 .wellness-concept-list ul {
@@ -519,6 +521,11 @@ input::-webkit-inner-spin-button {
 
   .wellness-reality-concept h1 {
     padding-bottom: 0.5rem;
+    padding-right: 0;
+  }
+
+  .wellness-concept-list p {
+    padding-right: 0;
   }
 
   .primary_heading_2 {
