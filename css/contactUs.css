@@ -566,4 +566,12 @@ form button:focus {
   .contact_us_map {
     height: 300px;
   }
+
+  .contact_fields_container i {
+    font-size: 1.5rem;
+  }
+
+  .contact_fields_container span {
+    font-size: 0.8rem !important;
+  }
 }

@@ -22,8 +22,6 @@ getInTouchForm.addEventListener("submit", (e) => {
   let error = document.getElementById("errorMessage");
   let submitBtn = document.getElementById("submitBtn");
 
-  console.log(plot.checked, villa.checked);
-
   if (phone.value.length !== 10) {
     error.innerHTML = "*Valid phone number is required ";
   }
