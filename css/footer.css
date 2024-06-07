@@ -95,7 +95,7 @@ form > textarea {
   width: 2rem;
   aspect-ratio: 3/2;
   object-fit: contain;
-  mix-blend-mode: color-burn;
+  /* mix-blend-mode: color-burn; */
 }
 
 .copyright p:first-child {
