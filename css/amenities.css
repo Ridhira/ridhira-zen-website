@@ -12,7 +12,7 @@
   height: 450px;
   object-fit: cover;
   transition: 0.5s;
-  filter: brightness(30%) blur(2px);
+  filter: brightness(45%);
 }
 
 .amenities img:hover {
@@ -72,7 +72,7 @@
 .amenities_card_icon small {
   color: var(--light);
   text-align: center;
-  color: var(--secondary);
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
@@ -80,7 +80,7 @@
 }
 
 .amenities_card_icon_border {
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 2px solid #fff;
   width: 50px;
   margin: 1rem 0 !important;
 }

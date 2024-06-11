@@ -62,13 +62,22 @@
   });
 
   //! Header carousel
+  // $(".header-carousel").owlCarousel({
+  //   autoplay: true,
+  //   smartSpeed: 500,
+  //   loop: true,
+  //   nav: false,
+  //   dots: false,
+  //   items: 1,
+  // });
+
   $(".header-carousel").owlCarousel({
-    autoplay: false,
-    smartSpeed: 1000,
-    loop: true,
-    nav: false,
-    dots: false,
     items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+
+    animateOut: "fadeOut",
   });
 
   //! Testimonials carousel

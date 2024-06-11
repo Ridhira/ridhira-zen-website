@@ -35,9 +35,9 @@
   justify-content: center;
   font-size: 22px;
   background: transparent;
-  color: var(--secondary);
+  color: #fff;
   transition: 0.5s;
-  border: 1px solid var(--secondary);
+  border: 1px solid #fff;
 }
 
 .facilities .facilities-carousel .owl-nav .owl-next {
@@ -53,15 +53,15 @@
   justify-content: center;
   font-size: 22px;
   background: transparent;
-  color: var(--secondary);
+  color: #fff;
   transition: 0.5s;
-  border: 1px solid var(--secondary);
+  border: 1px solid #fff;
 }
 
 .facilities-case-item img {
   object-fit: cover;
   transition: 0.5s;
-  filter: brightness(30%);
+  filter: brightness(45%);
 }
 
 .facilities-case-item:hover img {
@@ -140,9 +140,9 @@
   justify-content: center;
   font-size: 22px;
   background: transparent;
-  color: var(--secondary);
+  color: #fff;
   transition: 0.5s;
-  border: 1px solid var(--secondary);
+  border: 1px solid #fff;
 }
 
 .functionality .functionality-carousel .owl-nav .owl-next {
@@ -158,9 +158,9 @@
   justify-content: center;
   font-size: 22px;
   background: transparent;
-  color: var(--secondary);
+  color: #fff;
   transition: 0.5s;
-  border: 1px solid var(--secondary);
+  border: 1px solid #fff;
 }
 
 @media (max-width: 992px) {
