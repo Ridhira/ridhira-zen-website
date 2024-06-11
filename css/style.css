@@ -32,6 +32,7 @@ html {
 .heading-2 {
   font-size: 2.2rem !important;
   font-family: "Poppins" !important;
+  margin-top: 5%;
 }
 
 .heading-3 {
@@ -45,11 +46,11 @@ html {
 }
 
 .paragraph-1 {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  justify-content: center;
+
   flex-wrap: wrap;
-  text-align: center;
+
   font-size: 1rem !important;
   font-family: "Poppins" !important;
   color: var(--tertiary);
@@ -194,6 +195,12 @@ html {
   margin-left: 0;
 }
 
+.under_line_wellness_reality1 {
+  border-bottom: 2px solid var(--secondary);
+  width: 200px;
+  margin: 10px auto;
+}
+
 .wellness-concept-list p {
   font-size: 1rem;
   text-align: left;
@@ -218,6 +225,187 @@ html {
   color: var(--primary);
   text-transform: uppercase;
 }
+
+/* new section starts*/
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1% 8% 1% 8%;
+}
+/* .projects-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+} */
+.content {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 2%;
+  overflow: hidden;
+}
+.image {
+  flex: 1;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.description {
+  flex: 1;
+  padding: 5%;
+  text-align: left;
+}
+
+.description h2 {
+  color: #a77e34;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.description h3 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.description p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.description1 {
+  flex: 1;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.description1 h2 {
+  color: #a77e34;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.description1 h3 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.description1 p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* new section ends*/
+
+/* location section starts */
+
+.location-section {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.location-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.location-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.location-section img {
+  max-width: 50%;
+  height: 350px; /* Specify the height you want here */
+
+  margin-right: 20px;
+}
+
+.location-details {
+  text-align: left;
+  max-width: 55%;
+  margin-top: 3%;
+}
+
+.location-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.location-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a77e34;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.location-button:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+/* location section ends */
+
+/* to make it responsive */
+
+/* Mobile view */
+
+@media (max-width: 768px) {
+  .description1 {
+    padding-top: 5%;
+    margin-bottom: 5%;
+  }
+  .description {
+    padding: 5% 0 5% 0;
+  }
+
+  .location-content {
+    display: inline-block;
+  }
+
+  .location-section img {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  .location-details {
+    padding: 6%;
+    max-width: 100%;
+    margin-top: 0%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .image {
+    order: -1; /* Move image to the top */
+  }
+}
+
+/* Tablet and above */
+@media (min-width: 769px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .image {
+    order: 0; /* Normal order */
+  }
+}
+
+/* to make it responsive ends */
 
 .map_container {
   display: flex;
