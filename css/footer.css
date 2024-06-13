@@ -110,7 +110,7 @@ form > textarea {
 }
 
 .copyright a {
-  color: var(--white);
+  color: var(--secondary);
   transition: all 0.2s;
   font-weight: bold;
 }
