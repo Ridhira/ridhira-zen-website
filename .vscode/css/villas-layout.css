@@ -1,0 +1,77 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.buttons button {
+  margin: 0 2%;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: "Poppins";
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  border-color: var(--secondary);
+  font-weight: 300 !important; /* Lighter font weight */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.buttons button:hover {
+  background-color: var(--secondary); /* Hover background color */
+  color: #fff; /* Hover text color */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+}
+.floor-plan {
+  display: none;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.floor-plan img {
+  max-width: 35%;
+  height: auto;
+}
+
+.floor-images {
+  display: flex;
+  justify-content: space-between; /* Adjusted to place images closer */
+  gap: 10px; /* Add some gap between images */
+}
+
+.floor-images img {
+  max-width: 35%; /* Allow images to take full width of their container */
+}
+
+.floor-images div {
+  flex: 1;
+  text-align: right;
+}
+
+.villa-text {
+  margin-top: 2%;
+}
+
+.floor-text {
+  color: var(--secondary);
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.floor-images div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floor-images img {
+  max-width: 90%; /* Adjusted to ensure images fit better */
+  margin-top: 5px;
+}
+
+/* Show the default plan */
+#plan-600 {
+  display: block;
+}

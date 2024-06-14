@@ -1,0 +1,404 @@
+/* @ PAGE BANNER AND BANNER HEADING */
+
+.wellness-page-banner {
+  background-image: url(../img/Wellness/Images/wellness-banner-dark.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -11rem;
+}
+
+.banner_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner_heading_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -8%;
+}
+
+.banner_heading_text h2 {
+  color: #fff;
+}
+
+/* $ WELLNESS FEATURE HEADING CONTAINER */
+
+.wellness-feature-part-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 0 0 5rem 0;
+}
+
+.wellness-feature {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wellness-feature-odd {
+  justify-content: right;
+}
+
+.wellness-feature-even {
+  justify-content: left;
+}
+
+.wf-typography {
+  padding: 3rem 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 40vw;
+  border-radius: 10px;
+}
+
+.wf-typo-position-odd {
+  left: 10rem;
+}
+
+.wf-typo-position-even {
+  right: 10rem;
+}
+
+.wf-typography h2 {
+  color: var(--white);
+  font-weight: bold;
+  text-align: left;
+}
+
+.wf-typography p {
+  color: var(--white) !important;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.side_line {
+  border-bottom: 2px solid var(--white);
+  width: 10%;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.wf-bg-1 {
+  background-color: #898b8a;
+}
+
+.wf-bg-2 {
+  background-color: #803841;
+}
+
+.wf-bg-3 {
+  background-color: #466755;
+}
+
+.wf-bg-4 {
+  background-color: #dc914f;
+}
+
+.wf-bg-5 {
+  background-color: #8b8881;
+}
+
+.wf-parent-img {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 55vw;
+}
+
+.parent-img-1 {
+  background-image: url(../img/Wellness/Images/wellness-large-image-5.jpg);
+}
+
+.parent-img-2 {
+  background-image: url(../img/Wellness/Images/wellness-large-image-4.jpg);
+}
+
+.parent-img-3 {
+  background-image: url(../img/Wellness/Images/wellness-large-image-3.jpg);
+}
+
+.parent-img-4 {
+  background-image: url(../img/Wellness/Images/wellness-large-image-1.jpg);
+}
+
+.parent-img-5 {
+  background-image: url(../img/Wellness/Images/wellness-large-image-2.jpg);
+}
+
+.child-image {
+  position: absolute;
+  top: 62%;
+  width: 12vw;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.child-image-odd {
+  left: 4rem;
+}
+
+.child-image-even {
+  right: 4rem;
+}
+
+/* # WELLNESS FEATURE INFO TEXT AND BANNER START */
+.wf-info {
+  background-image: url(../img/Wellness/Images/wellness-separation-banner-image.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.wf-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 420px;
+  margin-left: 20%;
+  height: 100%;
+}
+
+.wf-info-text h2 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.wf-info-text p {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.wf-info-side-line {
+  border-bottom: 2px solid var(--white);
+  width: 15%;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+/* % WELLNESS FEATURE INFO TEXT AND BANNER END */
+
+/* ! MEDIA QUERY START */
+
+@media (max-width: 1200px) {
+  .wf-typography {
+    width: 50vw;
+  }
+
+  .child-image {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .wellness-page-banner {
+    margin-top: 0;
+    height: 60vh;
+  }
+
+  .wellness-feature-part-1 {
+    gap: 5rem;
+  }
+
+  .wellness-feature {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .wf-parent-img {
+    height: 500px;
+    width: 80vw;
+  }
+
+  .wf-typography {
+    position: relative;
+    width: 100vw;
+    bottom: 0;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    border-radius: 0;
+  }
+
+  .wf-typo-position-odd {
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .wf-typo-position-even {
+    right: 0;
+    transform: translate(0, 0);
+  }
+
+  .wf-typography p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .child-image {
+    left: 50%;
+    width: 15rem;
+    top: 55%;
+    transform: translateX(-50%);
+  }
+
+  .side_line {
+    display: none;
+  }
+
+  .wf-info {
+    height: 300px;
+  }
+
+  .wf-info-text {
+    align-items: center;
+    width: 60%;
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .wf-info-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .wf-info-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .wellness-page-banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .wellness-page-banner {
+    height: 40vh;
+  }
+
+  .banner_heading_text {
+    margin-left: 0%;
+    padding: 0 1rem;
+  }
+
+  .wellness-feature-part-1 {
+    gap: 5rem;
+    padding: 4rem 0;
+  }
+
+  .wellness-feature {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .wf-parent-img {
+    height: 300px;
+    width: 100vw;
+  }
+
+  .wf-typography {
+    padding: 4rem 3rem 2rem 3rem;
+    height: auto;
+  }
+
+  .wf-typo-position-odd {
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .wf-typo-position-even {
+    right: 0;
+    transform: translate(0, 0);
+  }
+
+  .wf-typography p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .child-image {
+    width: 12rem;
+    top: 40%;
+    height: 150px;
+  }
+
+  .side_line {
+    top: 5rem;
+  }
+
+  .wf-typography h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .wf-typography p {
+    font-size: 0.8rem !important;
+    line-height: 1.4;
+  }
+
+  .wf-info {
+    height: 250px;
+  }
+
+  .wf-info-text {
+    align-items: center;
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .wf-info-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .wf-info-text p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .wf-info-side-line {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .wf-typography h2 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
