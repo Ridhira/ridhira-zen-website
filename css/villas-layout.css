@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 3%;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .buttons button {
@@ -24,29 +25,15 @@
   color: #fff; /* Hover text color */
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
 }
+
 .floor-plan {
   display: none;
   text-align: center;
   margin-bottom: 5%;
 }
 .floor-plan img {
-  max-width: 35%;
+  max-width: 50%;
   height: auto;
-}
-
-.floor-images {
-  display: flex;
-  justify-content: space-between; /* Adjusted to place images closer */
-  gap: 10px; /* Add some gap between images */
-}
-
-.floor-images img {
-  max-width: 35%; /* Allow images to take full width of their container */
-}
-
-.floor-images div {
-  flex: 1;
-  text-align: right;
 }
 
 .villa-text {
@@ -60,18 +47,95 @@
   font-size: 20px;
 }
 
-.floor-images div {
+.floor-images-4 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 0; /* Ensure there is no gap between images */
+  padding: 0% 18%;
 }
 
-.floor-images img {
-  max-width: 90%; /* Adjusted to ensure images fit better */
-  margin-top: 5px;
+.floor-images-4 > div {
+  flex: 1;
+  text-align: center;
+}
+
+.floor-images-4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.floor-images-3 {
+  display: flex;
+  justify-content: center;
+  gap: 0; /* Ensure there is no gap between images */
+  padding: 0% 16%;
+}
+
+.floor-images-3 > div {
+  flex: 1;
+  text-align: center;
+  height: 1%;
+}
+
+.floor-images-3 img {
+  max-width: 90%;
+  height: 75%;
 }
 
 /* Show the default plan */
 #plan-600 {
   display: block;
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on very small screens */
+    align-items: center; /* Center align buttons */
+    flex-wrap: wrap !important;
+    display: inline-block;
+    margin: 3% 6% 3% 19%;
+  }
+  .buttons button {
+    margin: 5px 0; /* Adjust margins for smaller screens */
+    padding: 8px 20px; /* Adjust padding for smaller screens */
+    font-size: 9px !important; /* Smaller font size */
+    /* width: 30%; Make buttons take up most of the screen width */
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 568px) {
+  .buttons button {
+    font-size: 9px !important;
+  }
+
+  .floor-images-3 {
+    display: inline-block;
+  }
+
+  .floor-images-4 {
+    display: inline-block;
+  }
+}
+
+/* For tablets and larger screens */
+@media (max-width: 768px) {
+  .buttons button {
+    margin: 5px 1%; /* Adjust margins for smaller screens */
+    padding: 8px 20px; /* Adjust padding for smaller screens */
+    /* font-size: 18px; Slightly smaller font size */
+  }
+}
+
+@media (max-width: 823px) {
+  .buttons {
+    flex-wrap: nowrap;
+  }
+
+  .buttons button {
+    font-size: 16px;
+  }
 }
