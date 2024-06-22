@@ -99,6 +99,7 @@
     <link href="css/plotSection.css" rel="stylesheet" />
     <link href="css/testimonials.css" rel="stylesheet" />
     <link href="css/projects.css" rel="stylesheet" />
+	<link href="css/formModal.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ! Spinner Start -->
@@ -1208,6 +1209,70 @@
       <i class="bi bi-arrow-up"></i>
     </a>
     <!-- ! Back to Top End -->
+	
+	   <!-- % MODAL FOR CONTACT FORM START -->
+    <section class="modal" id="form1" style="display: none">
+      <div class="modal-form">
+        <!-- <div class="modal-heading">
+            <p>Unlock your 15 mins complimentary service now!</p>
+            <button class="btn-close" onclick="hideForm()">X</button>
+          </div>
+          <p class="sub-heading">
+            Fill your details and experience a spa at Ode Spa.
+          </p> -->
+        <button class="btn-close" onclick="hideForm()">X</button>
+
+        <form name="user-form" class="user-form" id="offer-form">
+          <div class="user-form-container">
+            <label>Full Name <span>*</span></label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="Full-Name"
+              required
+              id="offerName"
+            />
+          </div>
+          <div class="user-form-container">
+            <label>Phone <span>*</span></label>
+            <input
+              type="number"
+              onKeyPress="if(this.value.length==10) return false;"
+              placeholder="Phone Number"
+              name="Phone-Number"
+              required
+              id="offerPhone"
+            />
+          </div>
+          <div class="user-form-container">
+            <label>Email Address <span>*</span></label>
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="Email-Address"
+              id="offerEmail"
+              required
+            />
+          </div>
+          <p class="w-100 mb-0 error-text" id="error"></p>
+
+          <div class="button-container">
+            <!-- <button class="submit-btn" id="submit">Submit</button> -->
+            <button id="submit" type="submit" class="submit-btn">Submit</button>
+          </div>
+
+          <!-- <div class="terms-and-condition">
+            <span>*T&C Apply</span>
+          </div> -->
+        </form>
+        <div class="villa-offer-img">
+          <img src="./img/Home/Images/villa-offer-img.jpg" alt="offer" />
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <!-- % MODAL FOR CONTACT FORM END -->
 
     <!-- @ SIDE BAR START -->
     <div id="sidebar" class="sidebar-contact bg-primary hide-sidebar">
