@@ -40,7 +40,7 @@ body {
 .modal-form {
   display: grid;
   justify-items: flex-end;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 1fr 25%;
   width: 800px;
   height: auto;
   margin: auto;
@@ -64,7 +64,8 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -3rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 .villa-offer-img {

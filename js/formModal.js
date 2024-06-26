@@ -9,7 +9,7 @@ function showContactForm() {
   }
 }
 
-setTimeout(showContactForm, 3000);
+setTimeout(showContactForm, 9000);
 
 // Hide Form
 

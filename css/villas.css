@@ -41,23 +41,6 @@
   background: linear-gradient(#d2a765, #d2a765) bottom / 70% 2px no-repeat;
 }
 
-.villa-primary-heading-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-}
-
-.villa-primary-heading-1 h1 {
-  color: var(--primary);
-  text-transform: uppercase;
-  text-align: center;
-  display: table;
-  margin: auto;
-  padding-bottom: 10px;
-  background: linear-gradient(#d2a765, #d2a765) bottom / 70% 2px no-repeat;
-}
-
 .villa-feature-container {
   max-width: 1200px;
   margin: auto;
@@ -97,7 +80,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 3rem 0;
+  margin: 5rem 0;
   padding: 2rem 0;
 }
 
@@ -338,12 +321,6 @@
   }
 }
 
-@media (max-width: 1100px) {
-  .architectural-design p {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 992px) {
   .villas-page-banner {
     height: 60vh;
@@ -397,13 +374,9 @@
   }
 
   .architectural-design p {
-    /* font-size: 1rem; */
+    font-size: 1rem;
     line-height: 1.5;
     margin-top: 1rem;
-  }
-
-  .architectural-design h3 {
-    margin-top: 3rem;
   }
   .villa-plot-container img {
     height: 40vh;
